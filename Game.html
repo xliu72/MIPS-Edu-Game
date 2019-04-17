@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>MIPS Education Game</title>
 
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+  </head>
 
-<body onload="main();">
+  <body onload="main();">
     <div id="screen">
-        <h1>MIPS Educational Game</h1>
-        <canvas id="gameCanvas" width="480" height="320"></canvas>
-        <p id=description>This is pre-alpha stage of developmental demo. We will add a description in the future.
-            <button onclick="getUserAgent()">Browser Info</button></p>
-        <p id=useragent></p>
+      <h1>MIPS Educational Game</h1>
+      <canvas id="gameCanvas" width="480" height="320"></canvas>
+      <p id="description">
+        This is pre-alpha stage of developmental demo. We will add a description
+        in the future. <button onclick="getUserAgent()">Browser Info</button>
+      </p>
+      <p id="useragent"></p>
     </div>
     <script>
-        function getUserAgent() {
-            var x = "Your browser: " + navigator.userAgent;
-            document.getElementById("useragent").innerHTML = x;
-        }
+      function getUserAgent() {
+        var x = "Your browser: " + navigator.userAgent;
+        document.getElementById("useragent").innerHTML = x;
+      }
     </script>
 
     <script type="text/javascript" src="./JS/GameScene.js"></script>
@@ -33,8 +34,15 @@
     <script type="text/javascript" src="./JS/Event/LongPressEvent.js"></script>
     <script type="text/javascript" src="./JS/Menu/MenuAnimation.js"></script>
     <script type="text/javascript" src="./JS/Event/NewSceneEvent.js"></script>
-    <script type="text/javascript" src="./JS/Menu/SelectChapterMenu.js"></script>
-    <script type="text/javascript" src="./JS/Interpreter/Interpreter.js"></script>
+    <script src="JS/Event/BackEvent.js"></script>
+    <script
+      type="text/javascript"
+      src="./JS/Menu/SelectChapterMenu.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./JS/Interpreter/Interpreter.js"
+    ></script>
     <script type="text/javascript" src="./JS/MainScene.js"></script>
     <script type="text/javascript" src="./JS/Layer.js"></script>
     <script type="text/javascript" src="./JS/Menu/MenuBackGround.js"></script>
@@ -43,15 +51,11 @@
     <script type="text/javascript" src="./JS/Register.js"></script>
     <script type="text/javascript" src="./JS/RegisterCell.js"></script>
     <script type="text/javascript" src="./JS/Event/RunCodeEvent.js"></script>
-    <script src="JS/Code_Panel/CodePanel.js"> </script>
-    <script src="JS/Code_Panel/TextCell.js"> </script>
+    <script src="JS/Code_Panel/CodePanel.js"></script>
+    <script src="JS/Code_Panel/TextCell.js"></script>
     <script type="text/javascript" src="./JS/Event/HintEvent.js"></script>
-    <script src="Resource/Loader.js"> </script>
+    <script src="Resource/Loader.js"></script>
 
-    <script src="JS/Main.js"> </script>
-
-
-
-</body>
-
+    <script src="JS/Main.js"></script>
+  </body>
 </html>
